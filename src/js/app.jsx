@@ -221,7 +221,7 @@ function Footer(){
    ========================================================= */
 function Hero(){
   return <section className="hero" data-tone="sand" aria-labelledby="h-hero">
-    <div className="img"><img src={IMG.c_hero} alt="A monumental terracotta leather flower sculpture set in a sunlit stone archway" /></div>
+    <div className="img"><img src={IMG.c_hero} alt="A monumental coral leather flower sculpture resting in a sunlit stone archway" /></div>
     <div className="wrap">
             <h1 id="h-hero" tabIndex="-1"><Ln>Built to</Ln><Ln>make an</Ln><Ln>impact.</Ln></h1>
       <div className="hrow fade-in">
@@ -537,7 +537,7 @@ function Expertise(){
     <section className="exphero" data-tone="bone" aria-labelledby="page-h1">
       <div className="img"><img src={IMG.c_mirrors} alt="A sunlit wall of assorted vintage mirrors in coral, green and cream frames"/></div>
       <div className="wrap">
-        <h1 id="page-h1" tabIndex="-1" className="d-xl" style={{fontSize:"clamp(2.8rem,6.6vw,6.8rem)"}}>Organised around what you need.</h1>
+        <h1 id="page-h1" tabIndex="-1" className="d-xl" style={{fontSize:"clamp(2.6rem,min(6.6vw,11.5vh),6.8rem)"}}>Organised around what you need.</h1>
         <p className="lede muted">Six areas of expertise, brought together around what your business needs. Most clients draw on several at once, which is where joined-up thinking makes the biggest difference.</p>
       </div>
     </section>
@@ -616,7 +616,7 @@ function About(){
     <section className="abouthero" data-tone="peach" aria-labelledby="page-h1">
       <div className="img"><img src={IMG.c_bombwide} alt="A purple cartoon bomb on a peach background"/></div>
       <div className="wrap">
-        <h1 id="page-h1" tabIndex="-1" className="d-xl" style={{fontSize:"clamp(2.8rem,6.6vw,6.8rem)"}}>Good marketing starts with curiosity.</h1>
+        <h1 id="page-h1" tabIndex="-1" className="d-xl" style={{fontSize:"clamp(2.6rem,min(6.6vw,11.5vh),6.8rem)"}}>Good marketing starts with curiosity.</h1>
         <p className="lede muted">We’re fascinated by what makes people stop, think, feel and act. We combine that curiosity with strategic thinking, creative ideas and a determination to get things done.</p>
       </div>
     </section>

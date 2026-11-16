@@ -22,6 +22,7 @@ together so edits are quick and safe.
   Near the top are plain data arrays (EXPERTISE, PROCESS, PILLARS, CLIENTS, the
   FAQ list) — most copy changes are a one-line edit there.
 - `js/images.js` — maps each image name to its file.
+- `favicon.png`, `favicon-48.png`, `apple-touch-icon.png` — the browser tab and phone home-screen icons.
 - `images/` — all photos. Client logos are in `images/clients/`.
 
 ## Brand kit (defined in css/styles.css :root)
