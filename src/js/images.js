@@ -1,0 +1,30 @@
+// Maps every image name used in app.jsx to its file.
+// To add an image: drop the file into src/images/ (client logos go in src/images/clients/), then add a line here.
+window.IMG = {
+  "c_arch": "images/c_arch.jpg",
+  "c_arrow": "images/c_arrow.jpg",
+  "c_billboard": "images/c_billboard.jpg",
+  "c_colonnade": "images/c_colonnade.jpg",
+  "c_curve": "images/c_curve.jpg",
+  "c_lens": "images/c_lens.jpg",
+  "c_light": "images/c_light.jpg",
+  "c_megaphone": "images/c_megaphone.jpg",
+  "c_pleat": "images/c_pleat.jpg",
+  "c_stones": "images/c_stones.jpg",
+  "logo_bone": "images/logo_bone.png",
+  "logo_plum": "images/logo_plum.png",
+  "c_chanel": "images/c_chanel.jpg",
+  "c_phones": "images/c_phones.jpg",
+  "c_bombwide": "images/c_bombwide.jpg",
+  "c_mirrors": "images/c_mirrors.jpg",
+  "c_hero": "images/c_hero.jpg",
+  "client_ace-contracts": "images/clients/ace-contracts.png",
+  "client_artistic-statements": "images/clients/artistic-statements.png",
+  "client_dodds-shute": "images/clients/dodds-shute.png",
+  "client_isumo": "images/clients/isumo.png",
+  "client_ksr-architects-interior-designers": "images/clients/ksr-architects-interior-designers.png",
+  "client_metric": "images/clients/metric.png",
+  "client_multipli": "images/clients/multipli.png",
+  "client_trinity-london": "images/clients/trinity-london.png",
+  "client_victoria-stone": "images/clients/victoria-stone.png"
+};
