@@ -17,6 +17,7 @@ window.IMG = {
   "c_phones": "images/c_phones.jpg",
   "c_bombwide": "images/c_bombwide.jpg",
   "c_mirrors": "images/c_mirrors.jpg",
+  "c_chairs": "images/c_chairs.jpg",
   "c_hero": "images/c_hero.jpg",
   "client_ace-contracts": "images/clients/ace-contracts.png",
   "client_artistic-statements": "images/clients/artistic-statements.png",

@@ -204,13 +204,12 @@ function Footer(){
         <div><img className="flogo" src={IMG.logo_bone} alt="Flourish Communications"/><p className="muted" style={{maxWidth:"30ch"}}>Strategic marketing for luxury property and design.</p></div>
         <div><p className="label">Explore</p><ul>{NAV.map(n=><li key={n.id}><L to={n.id}>{n.label}</L></li>)}<li><L to="contact">Contact</L></li></ul></div>
         <div><p className="label">Contact</p><ul><li>hello@flourishcomms.co.uk</li></ul></div>
-        <div><p className="label">Follow</p><ul><li><V>LinkedIn</V></li><li><V>Instagram</V></li></ul></div>
+        <div><p className="label">Follow</p><ul><li><a href="https://www.linkedin.com/company/we-are-flourish-comms" target="_blank" rel="noopener noreferrer">LinkedIn</a></li><li><a href="https://www.instagram.com/flourish_comms/" target="_blank" rel="noopener noreferrer">Instagram</a></li></ul></div>
       </div>
       <div className="small">
-        <span>© 2026 Flourish Communications</span>
-        
-        <span>Privacy policy to follow</span>
-        <span>Prototype for review.</span>
+        <span>© 2026 Flourish Comms Ltd</span>
+        <span>Flourish Comms Ltd, 20 Wenlock Road, London, N1 7GU. Company no. 15961845.</span>
+        <span><L to="privacy">Privacy policy</L></span>
       </div>
       <p className="wink">Thanks for scrolling all the way down here. We notice these things.</p>
     </div>
@@ -621,30 +620,32 @@ function About(){
         <p className="lede muted">We’re fascinated by what makes people stop, think, feel and act. We combine that curiosity with strategic thinking, creative ideas and a determination to get things done.</p>
       </div>
     </section>
-    <section className="sec tight" aria-labelledby="h-story">
+    <section className="sec tight" data-tone="cream" aria-labelledby="h-story">
       <div className="wrap founder">
-        <Photo k="c_chanel" ar="ar-45" cap={false} className="sv" alt="Chanel Cullen, founder of Flourish Communications"/>
+        <Photo k="c_chanel" ar="ar-23" cap={false} className="sv" alt="Chanel Cullen, founder of Flourish Communications"/>
         <div className="txt prose rise">
-          <h2 id="h-story" className="d-l">Why Flourish exists.</h2>
-          <p>Flourish began with a simple observation. Some of the best businesses around, with real craft, real expertise and loyal clients, had marketing that didn't come close to reflecting them.</p>
-          <p>We set out to change that, with marketing that is strategically sound, creatively ambitious and delivered consistently.</p>
-          <p>Flourish was founded by Chanel Cullen, who leads the agency's strategy, creative direction and client relationships. She works alongside a wider team of experienced marketing professionals, bringing the right expertise to each piece of work.</p>
-          <p className="ph-note">Add Chanel's background here once confirmed. Avoid years-of-experience claims unless verified.</p>
+          <h2 id="h-story" className="d-l">A bit about Flourish.</h2>
+          <p>There are far too many brilliant businesses doing extraordinary things that not enough people know about. And that’s something we want to change.</p>
+          <p>Flourish was founded by Chanel Cullen, a marketing strategist with an appetite for big ideas, a fascination with human behaviour and an instinct for asking a lot of questions.</p>
+          <p>We believe the best marketing comes from being genuinely curious about a business, understanding its audience and being brave enough to do something a little different.</p>
+          <p className="lede" style={{fontFamily:"var(--display)",fontStyle:"italic"}}>We love big ideas. But we love making them happen even more.</p>
         </div>
       </div>
+
     </section>
     <section className="sec dark" aria-labelledby="h-people">
       <div className="wrap spec">
-        <Photo k="c_light" cap={false} alt="" ar="ar-45" className="sv"/>
+        <Photo k="c_chairs" cap={false} ar="ar-45" className="sv" alt="Five very different armchairs gathered around a low table in a deep red room"/>
         <div className="txt prose">
-                    <h2 id="h-people" className="d-l">Senior people on every account.</h2>
-          <p style={{color:"var(--muted-l)"}}>Every client works with experienced marketing professionals, including content specialists, designers and digital experts, brought together around what each piece of work needs.</p>
-          <p style={{color:"var(--muted-l)"}}>We can offer that because of how Flourish is built. Many of our team built careers in agencies and in-house teams, then found that traditional working patterns didn't fit around family life. Through the <V>Marketing Mums Network</V>, they do excellent work, flexibly.</p>
-          <p style={{color:"var(--muted-l)"}}>You get brilliant, experienced people. We get a team that chose to be here.</p>
-          <p className="ph-note">Confirm how the team and the network are described publicly.</p>
+          <h2 id="h-people" className="d-l">Meet your marketing department.</h2>
+          <p style={{color:"var(--muted-l)"}}>Every Flourish client has a dedicated client delivery manager who gets to know their business inside out. Alongside them is a wider team of creative, strategic and digital specialists.</p>
+          <p style={{color:"var(--muted-l)"}}>We believe brilliant careers and busy lives should be able to coexist. We’re passionate about flexible working and, through our Marketing Mums Network, championing opportunities for mothers in the marketing industry.</p>
+          <p style={{color:"var(--muted-l)"}}>We bring people together based on their talent, experience and enthusiasm for what they do.</p>
+          <p className="lede" style={{fontFamily:"var(--display)",fontStyle:"italic"}}>Brilliant people, doing work they love, for businesses we believe in.</p>
         </div>
       </div>
     </section>
+    
     <section className="sec tight" style={{paddingBottom:0}}><div className="wrap"><Photo k="c_stones" cap={false} alt="" ar="ar-21" className="sv"/></div></section>
     <section className="sec tight" aria-labelledby="h-values">
       <div className="wrap">
@@ -716,7 +717,7 @@ function Contact(){
             <Field errs={errs} k="message" label="What’s on your mind?"><textarea id="f-message" rows="3" value={f.message} onChange={set("message")} placeholder="Big ideas, little ideas, no idea yet..."/></Field>
             {errs.form && <p className="err" role="alert">{errs.form}</p>}
             <div><Btn type="submit" disabled={sending}>{sending ? "Sending\u2026" : "Say hello"}</Btn></div>
-            <p className="fine">We’ll only use your details to reply to you. <V>Privacy policy</V></p>
+            <p className="fine">We’ll only use your details to reply to you. See our <L to="privacy">privacy policy</L>.</p>
           </form>}
         </div>
       </div>
@@ -727,6 +728,42 @@ function Contact(){
         <a className="mail" href="mailto:hello@flourishcomms.co.uk">hello@flourishcomms.co.uk</a>
       </div>
     </section>
+  </>;
+}
+
+function Privacy(){
+  return <>
+    <PageHero tone="bone" title="Privacy policy" lede="How Flourish Comms Ltd collects and uses your personal information."/>
+    <section className="sec tight" style={{paddingTop:0}}>
+      <div className="wrap prose" style={{maxWidth:"70ch"}}>
+        <p className="muted">Last updated: November 2026. This is a working draft and is being reviewed before launch.</p>
+
+        <h2 className="d-m">Who we are</h2>
+        <p>This website is operated by Flourish Comms Ltd (“Flourish”, “we”, “us”). Our registered office is 20 Wenlock Road, London, N1 7GU, and our company number is 15961845. We are the data controller for the personal information described in this policy. For any privacy question, email <a href="mailto:hello@flourishcomms.co.uk">hello@flourishcomms.co.uk</a>.</p>
+
+        <h2 className="d-m">The information we collect</h2>
+        <p>When you contact us through the form on this site, we collect your name, business name, email address and the message you send. When you visit the site, we also collect limited technical and usage information through analytics, as described below.</p>
+
+        <h2 className="d-m">How we use it</h2>
+        <p>We use the details you submit through the contact form only to respond to your enquiry and to correspond with you about it. We use analytics information to understand how the site is used and to improve it. We do not sell your personal information, and we do not use it for automated decision-making.</p>
+
+        <h2 className="d-m">Analytics and cookies</h2>
+        <p>We use Google Analytics to help us understand how visitors use the site, for example which pages are viewed and roughly where visitors come from. Google Analytics sets cookies and processes information such as your device and approximate location. This information is used in an aggregated way and helps us improve the site. You can find more detail in Google’s own privacy information, and you can control or block cookies through your browser settings.</p>
+
+        <h2 className="d-m">Who we share it with</h2>
+        <p>We share personal information only with service providers that help us run the site and our business, such as our website host and analytics provider, and only as far as needed for those services. We may also disclose information where we are required to by law.</p>
+
+        <h2 className="d-m">How long we keep it</h2>
+        <p>We keep enquiry correspondence for as long as needed to deal with your enquiry and for a reasonable period afterwards, then delete it. Analytics information is retained in line with our analytics provider’s standard retention settings.</p>
+
+        <h2 className="d-m">Your rights</h2>
+        <p>Under UK data protection law you have rights over your personal information, including the right to ask for a copy of it, to have it corrected or deleted, and to object to or restrict how we use it. To exercise any of these, email <a href="mailto:hello@flourishcomms.co.uk">hello@flourishcomms.co.uk</a>. You also have the right to complain to the Information Commissioner’s Office (ico.org.uk).</p>
+
+        <h2 className="d-m">Changes to this policy</h2>
+        <p>We may update this policy from time to time. Any changes will be posted on this page with a revised date above.</p>
+      </div>
+    </section>
+    <CTA/>
   </>;
 }
 
@@ -772,6 +809,7 @@ function App(){
   else if(SHOW_WORK && route.startsWith("work-")){const w=WORK.find(x=>"work-"+x.slug===route); page=w?<CaseStudy w={w}/>:<NotFound/>;}
   else if(route==="about") page=<About/>;
   else if(route==="contact") page=<Contact/>;
+  else if(route==="privacy") page=<Privacy/>;
   else page=<NotFound/>;
   return <>
     <a href="#main" className="skip" onClick={e=>{e.preventDefault(); document.getElementById("main").focus();}}>Skip to content</a>

@@ -537,9 +537,9 @@ body[data-tone="clay"] .fl path{stroke:currentColor}
 .hero .lede{color:var(--plum)}
 .hero .hint{display:none}
 @media(min-width:900px){
-  .hero{min-height:min(92vh,940px);display:flex;align-items:flex-end}
+  .hero{min-height:min(92vh,940px);max-height:760px;display:flex;align-items:flex-end}
   .hero .img{position:absolute;inset:0}
-  .hero .img img{height:100%;aspect-ratio:auto;object-position:88% 50%}
+  .hero .img img{height:100%;aspect-ratio:auto;object-position:88% 42%}
   .hero .wrap{width:100%;padding-block:clamp(40px,5vw,72px) clamp(120px,22vh,240px)}
 .hero h1{font-size:clamp(3.4rem,8.2vw,8.6rem);max-width:9ch}
 .hero .hrow{max-width:none}
@@ -650,6 +650,7 @@ body[data-tone="clay"] .fl path{stroke:currentColor}
 main section[data-tone="sand"]{background:#E9E0D3}
 main section[data-tone="peach"]{background:#E8A090}
 main section[data-tone="peach"] .muted{color:rgba(44,39,62,.78)}
+main section[data-tone="cream"]{background:#F3EDE8}
 main section[data-tone="bone"]{background:#E1DBCE}
 main section[data-tone="clay"]{background:#CD8169;--muted:#2C273E;--rule:rgba(44,39,62,.3)}
 main section[data-tone="clay"] .fl path{stroke:currentColor}
@@ -715,9 +716,9 @@ section[data-tone="plum"] .lmq img{filter:brightness(0) invert(.9) sepia(.12)}
 @media(prefers-reduced-motion:reduce){.ct-pic{transition:none}}
 
 /* About hero: one full-width image with text over the plain left */
-.abouthero{position:relative;background:#E8A090;overflow:hidden;min-height:min(74vh,720px);display:flex;align-items:flex-end}
+.abouthero{position:relative;background:#E8A090;overflow:hidden;min-height:min(74vh,720px);max-height:620px;display:flex;align-items:flex-end}
 .abouthero .img{position:absolute;inset:0}
-.abouthero .img img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.abouthero .img img{width:100%;height:100%;object-fit:cover;object-position:62% 62%}
 .abouthero .wrap{position:relative;z-index:2;width:100%;padding-block:clamp(40px,6vw,96px);display:grid;gap:26px}
 .abouthero h1{max-width:12ch}
 .abouthero .lede{max-width:34ch;color:rgba(44,39,62,.8)}
@@ -732,7 +733,7 @@ section[data-tone="plum"] .lmq img{filter:brightness(0) invert(.9) sepia(.12)}
 }
 
 /* Expertise hero: mirror gallery as full-width background, text on the open left */
-.exphero{position:relative;background:#EDE6D9;overflow:hidden;min-height:min(72vh,680px);display:flex;align-items:center}
+.exphero{position:relative;background:#EDE6D9;overflow:hidden;min-height:min(72vh,680px);max-height:620px;display:flex;align-items:center}
 .exphero .img{position:absolute;inset:0}
 .exphero .img img{width:100%;height:100%;object-fit:cover;object-position:70% 50%}
 .exphero .wrap{position:relative;z-index:2;width:100%;padding-block:clamp(40px,6vw,96px);display:grid;gap:26px}

@@ -20,6 +20,14 @@ downloading or uploading files.
 Keep your current website running until the new one is tested on Netlify's
 temporary address.
 
+## Updating the live site by hand
+The site is already on GitHub and Netlify. To publish a new version of these files:
+1. Open your `flourish-website` repository on github.com.
+2. Click **Add file** > **Upload files**.
+3. Drag in everything inside this folder (the `src` folder and the loose files).
+   Files with the same name are replaced.
+4. Click **Commit changes**. Netlify rebuilds and the live site updates in a minute or two.
+
 ## Making changes later (the no-download way)
 Once it's on GitHub + Netlify, open **Claude Code** (in the Claude desktop app),
 point it at this project, and ask for a change in plain English — e.g.
@@ -35,5 +43,5 @@ The `CLAUDE.md` file tells Claude Code how everything is organised.
 ## What's inside
 - `src/` — the editable website (HTML, CSS, the React app, images)
 - `build.js`, `package.json`, `netlify.toml` — the automatic build step
-- `dist/` — the generated site Netlify serves (rebuilt automatically; not edited)
+- `dist/` is created by Netlify when it builds; it is not included here and is never edited
 - `CLAUDE.md` — a guide for Claude Code

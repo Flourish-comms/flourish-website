@@ -51,8 +51,9 @@ a new file and update `js/images.js` and the reference in `js/app.jsx`. Then bui
 - Preview locally: `npx serve dist` (or any static server) and open the address.
 
 ## Still to do before launch (not yet done)
-- Chanel's background and the team wording on the About page.
-- Company number and registered office in the footer (legal requirement).
-- A privacy policy page, linked under the contact form.
-- Real LinkedIn and Instagram links (currently placeholders).
-- Confirm image licences; replace low-resolution logos/screenshots with originals.
+- Google Analytics is described in the privacy policy but is NOT installed yet.
+  Add the GA tag to `src/index.html` together with a cookie consent banner.
+- Privacy policy (`Privacy` in `js/app.jsx`) is a draft: get it reviewed, then
+  remove the "working draft" line.
+- Replace low-resolution logos and screenshots with original files.
+- Point flourishcomms.co.uk at Netlify (Domain management).
